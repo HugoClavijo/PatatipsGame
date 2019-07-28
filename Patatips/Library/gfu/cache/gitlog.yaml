@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &1
+MonoBehaviour:
+  m_ObjectHideFlags: 61
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -530159753, guid: 68c7e4565cde54155bb78d8e935f1ddb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cacheType: 3
+  lastUpdatedAtString: 2019-07-27T21:21:11.139-05:00
+  initializedAtString: 2019-07-27T21:21:11.139-05:00
+  log:
+  - commitID: 37171dbf86dacbe76e5b3eaa66eacf38d6f831a0
+    mergeA: 
+    mergeB: 
+    authorName: Hugo Clavijo
+    authorEmail: hugoused@hotmail.com
+    commitEmail: noreply@github.com
+    commitName: GitHub
+    summary: Initial commit
+    description: 
+    timeString: 2019-07-27T20:31:11.000-05:00
+    commitTimeString: 2019-07-27T20:31:11.000-05:00
+    changes:
+    - path: README.md
+      fullPath: C:\Users\hugoc\Documents\GitHub\PatatipsGame\README.md
+      projectPath: ..\README.md
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
