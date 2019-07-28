@@ -7,6 +7,8 @@ public class Dice : MonoBehaviour {
     private SpriteRenderer rend;
     private int whosTurn = 1;
     private bool coroutineAllowed = true;
+    public GameObject sonidoDados;
+
 
 	// Use this for initialization
 	private void Start () {
@@ -23,6 +25,7 @@ public class Dice : MonoBehaviour {
 
     private IEnumerator RollTheDice()
     {
+        Instantiate(sonidoDados);
         coroutineAllowed = false;
         int randomDiceSide = 0;
         for (int i = 0; i <= 20; i++)
