@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class Close : MonoBehaviour
 {
+     public GameObject closePop;
     private Button close;
     // Start is called before the first frame update
     void Start()
@@ -23,6 +24,7 @@ public class Close : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+         if (Input.GetMouseButtonDown(0))
+            Instantiate(closePop);
     }
 }

@@ -11,7 +11,8 @@ public class FollowThePath : MonoBehaviour {
     public int waypointIndex = 0;
 
     public bool moveAllowed = false;
-
+    public GameObject moverficha;
+    
 	// Use this for initialization
 	private void Start () {
         transform.position = waypoints[waypointIndex].transform.position;
@@ -33,6 +34,7 @@ public class FollowThePath : MonoBehaviour {
 
             if (transform.position == waypoints[waypointIndex].transform.position)
             {
+                Instantiate(moverficha);
                 waypointIndex += 1;
             }
         }
