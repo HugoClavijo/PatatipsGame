@@ -24,7 +24,7 @@ public class Close : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-         if (Input.GetMouseButtonDown(0))
-            Instantiate(closePop);
+        // if (Input.GetMouseButtonDown(0))
+          //  Instantiate(closePop);
     }
 }
