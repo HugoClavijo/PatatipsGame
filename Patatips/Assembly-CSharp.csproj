@@ -60,8 +60,8 @@
      <Compile Include="Assets\FollowThePath.cs" />
      <Compile Include="Assets\GameControl.cs" />
      <Compile Include="Assets\info.cs" />
-     <Compile Include="Assets\menuCanvas.cs" />
      <Compile Include="Assets\play.cs" />
+     <Compile Include="Assets\Scripts\menuCanvas.cs" />
      <Compile Include="Assets\Scripts\TiempodeVida.cs" />
      <Compile Include="Assets\video.cs" />
  <Reference Include="Unity.Timeline.Editor">

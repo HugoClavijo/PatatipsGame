@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3811900793868099365}
   - component: {fileID: 6789718603095976591}
-  - component: {fileID: -8506908012888151981}
+  - component: {fileID: 7323828119754217126}
   m_Layer: 0
   m_Name: PopSonido
   m_TagString: Untagged
@@ -43,7 +43,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: e20fab308ed604a4f8f3b0d52593a9bb, type: 3}
-  m_PlayOnAwake: 0
+  m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -128,7 +128,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &-8506908012888151981
+--- !u!114 &7323828119754217126
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -140,4 +140,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f8a46af010390346839fc12732918b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tiempo: 0.8
+  tiempo: 0.6

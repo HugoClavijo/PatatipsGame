@@ -7,11 +7,12 @@ public class Close : MonoBehaviour
 {
      public GameObject closePop;
     private Button close;
+
     // Start is called before the first frame update
     void Start()
     {
-        close.GetComponent<Button>();
-        close.onClick.AddListener(QuitGame);
+        //close.GetComponent<Button>();
+        //close.onClick.AddListener(QuitGame);
     }
 
     private void QuitGame()
