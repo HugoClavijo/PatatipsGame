@@ -66,6 +66,7 @@
     <Compile Include="Assets\Scripts\menuCanvas.cs" />
     <Compile Include="Assets\Scripts\popupCanvas.cs" />
     <Compile Include="Assets\Scripts\TiempodeVida.cs" />
+    <Compile Include="Assets\Scripts\unPauseGame.cs" />
     <Compile Include="Assets\video.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/hugoc/Documents/GitHub/PatatipsGame/Patatips/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>

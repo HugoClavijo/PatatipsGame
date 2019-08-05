@@ -4,7 +4,7 @@ using UnityEngine.UI;
 public class GameControl : MonoBehaviour {
 
     private static GameObject whoWinsTextShadow, player1MoveText, player2MoveText;
-    private static GameObject popupbath, popupfood;
+    private static GameObject popupbath, popupfood, popupbrush, popupvet;
 
     private static GameObject player1, player2;
 
@@ -22,6 +22,8 @@ public class GameControl : MonoBehaviour {
         player2MoveText = GameObject.Find("Player2MoveText");
         popupbath = GameObject.Find("PanelBath");
         popupfood = GameObject.Find("PanelFood");
+        popupbrush = GameObject.Find("PanelBrush");
+        popupvet = GameObject.Find("PanelVet");
 
         player1 = GameObject.Find("Player1");
         player2 = GameObject.Find("Player2");
@@ -34,6 +36,8 @@ public class GameControl : MonoBehaviour {
         player2MoveText.gameObject.SetActive(false);
         popupbath.gameObject.SetActive(false);
         popupfood.gameObject.SetActive(false);
+        popupbrush.gameObject.SetActive(false);
+        popupvet.gameObject.SetActive(false);
     }
 
     // Update is called once per frame
@@ -65,14 +69,34 @@ public class GameControl : MonoBehaviour {
             gameOver = true;
         }
 
+ 
         if (player1.GetComponent<FollowThePath>().waypointIndex == 5)
         {
+            //Time.timeScale = 0;
             popupbath.gameObject.SetActive(true);
+        }
+
+        if (popupbath.gameObject.activeSelf == false)
+        {
+            Time.timeScale = 1;
+        }
+
+        if (player1.GetComponent<FollowThePath>().waypointIndex == 10)
+        {
+            Time.timeScale = 0f;
+            popupbrush.gameObject.SetActive(true);
         }
 
         if (player1.GetComponent<FollowThePath>().waypointIndex == 15)
         {
+            Time.timeScale = 0f;
             popupfood.gameObject.SetActive(true);
+        }
+
+        if (player1.GetComponent<FollowThePath>().waypointIndex == 20)
+        {
+            Time.timeScale = 0f;
+            popupvet.gameObject.SetActive(true);
         }
 
         if (player2.GetComponent<FollowThePath>().waypointIndex ==
