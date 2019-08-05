@@ -17,6 +17,7 @@ public class menuCanvas : MonoBehaviour
     public void OpenScene()    {
         // put your logic to open the scene here
         SceneManager.LoadScene(nameScene);
+        
     }
 
     ///<summary>Opens the scene after a 0.3 second delay.</summary>

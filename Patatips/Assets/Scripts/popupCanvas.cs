@@ -5,30 +5,30 @@ using UnityEngine.UI;
 
 public class popupCanvas : MonoBehaviour
 {
-   // private static GameObject popup1;
-   // private static GameObject popup2;
-   // private static GameObject popup3;
-   // private static GameObject popup4;
-    private static GameObject popup;
+     GameObject popup1;
+    GameObject popup2;
+     GameObject popup3;
+     GameObject popup4;
+    //private static GameObject popup;
 
     // Start is called before the first frame update
     void Start()
     {
-        //popup1 = GameObject.Find("PanelBath");
-       // popup2 = GameObject.Find("PanelFood");
-        //popup3 = GameObject.Find("PanelBrush");
-        //popup4 = GameObject.Find("PanelVet");
+        popup1 = GameObject.Find("PanelBath");
+        popup2 = GameObject.Find("PanelFood");
+        popup3 = GameObject.Find("PanelBrush");
+        popup4 = GameObject.Find("PanelVet");
     }
 
-    public void ClosePopup(string names)
+    public void ClosePopup()
     {
-        popup = GameObject.Find(names);
-        popup.SetActive(false);
+        //popup = GameObject.Find(names);
+        //popup.SetActive(false);
 
-        // popup1.gameObject.SetActive(false);
-        // popup2.gameObject.SetActive(false);
-        // popup3.gameObject.SetActive(false);
-        // popup4.gameObject.SetActive(false);
+        popup1.SetActive(false);
+        popup2.SetActive(false);
+        popup3.SetActive(false);
+        popup4.SetActive(false);
 
     }
 
