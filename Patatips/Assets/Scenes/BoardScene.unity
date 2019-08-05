@@ -2221,7 +2221,7 @@ GameObject:
   - component: {fileID: 1238570883}
   - component: {fileID: 1238570882}
   m_Layer: 5
-  m_Name: Button
+  m_Name: CloseFood
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2291,6 +2291,17 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 519420032}
         m_MethodName: ClosePopup
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: PanelFood
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 874268002}
+        m_MethodName: ContinueGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2967,7 +2978,7 @@ GameObject:
   - component: {fileID: 1447211553}
   - component: {fileID: 1447211552}
   m_Layer: 5
-  m_Name: Button
+  m_Name: CloseBrush
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3037,6 +3048,17 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 519420032}
         m_MethodName: ClosePopup
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: PanelBrush
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 874268002}
+        m_MethodName: ContinueGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3128,7 +3150,7 @@ GameObject:
   - component: {fileID: 1570839611}
   - component: {fileID: 1570839610}
   m_Layer: 5
-  m_Name: Button
+  m_Name: CloseBath
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3198,6 +3220,17 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 519420032}
         m_MethodName: ClosePopup
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: PanelBath
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 874268002}
+        m_MethodName: ContinueGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3527,7 +3560,7 @@ GameObject:
   - component: {fileID: 1715867897}
   - component: {fileID: 1715867896}
   m_Layer: 5
-  m_Name: Button
+  m_Name: CloseVet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3597,6 +3630,17 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 519420032}
         m_MethodName: ClosePopup
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: PanelVet
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 874268002}
+        m_MethodName: ContinueGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
