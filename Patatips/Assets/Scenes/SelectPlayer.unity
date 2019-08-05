@@ -211,9 +211,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: f9f933f898b2eea4fa77e1e9f8f2871a, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 4c78fa3d50f0918409f0d816553f7e06, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.7
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -685,7 +685,7 @@ RectTransform:
   m_GameObject: {fileID: 1495184507}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
   m_Children: []
   m_Father: {fileID: 1998386458}
   m_RootOrder: 2
@@ -693,7 +693,7 @@ RectTransform:
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
   m_AnchoredPosition: {x: -580, y: -130}
-  m_SizeDelta: {x: 280, y: 442}
+  m_SizeDelta: {x: 1173, y: 1722}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1495184509
 MonoBehaviour:
@@ -760,7 +760,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 1a3b2c0920a79e64eaf93d7945870f1c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4788d7777157ee048a5c9df57aba69de, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -979,7 +979,7 @@ Camera:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_RenderingPath: -1
+  m_RenderingPath: 1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
   m_TargetEye: 3
@@ -1145,7 +1145,7 @@ RectTransform:
   m_GameObject: {fileID: 1835019332}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
   m_Children: []
   m_Father: {fileID: 1998386458}
   m_RootOrder: 1
@@ -1153,7 +1153,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
   m_AnchoredPosition: {x: 580, y: -160}
-  m_SizeDelta: {x: 332, y: 390}
+  m_SizeDelta: {x: 1421, y: 1531}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1835019334
 MonoBehaviour:
@@ -1242,7 +1242,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 1b8174305374c2f41acbb4352ba11044, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8c633fcfe5f76014fadf8333984d9df4, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
