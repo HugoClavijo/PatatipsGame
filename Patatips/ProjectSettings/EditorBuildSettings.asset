@@ -15,6 +15,21 @@ EditorBuildSettings:
     path: Assets/Scenes/BoardScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
+    path: Assets/Scenes/BoardScene2.unity
+    guid: 03e2862cd84bdf4468c10800b7df0c3e
+  - enabled: 1
     path: Assets/Scenes/CreditsScene.unity
     guid: a61ceafd5a162e649a0d9a444481c9d3
+  - enabled: 1
+    path: Assets/Scenes/WinDogScene.unity
+    guid: 8436d07cbe60bc049a649566f1b4cd50
+  - enabled: 1
+    path: Assets/Scenes/LoseDogScene.unity
+    guid: 6aad026bb1c5e6b4da7e2a5d9ebefbbf
+  - enabled: 1
+    path: Assets/Scenes/WinCatScene.unity
+    guid: 066d78fd7dcf96c42a51e0d4464051db
+  - enabled: 1
+    path: Assets/Scenes/LoseCatScene.unity
+    guid: c793333dc045a25439429131d1b08002
   m_configObjects: {}
