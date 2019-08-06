@@ -5,8 +5,7 @@ using UnityEngine.UI;
 
 public class Close : MonoBehaviour
 {
-     public GameObject closePop;
-    private Button close;
+     
 
     // Start is called before the first frame update
     void Start()
@@ -15,7 +14,7 @@ public class Close : MonoBehaviour
         //close.onClick.AddListener(QuitGame);
     }
 
-    private void QuitGame()
+    public void QuitGame()
     {
 
         Application.Quit();
