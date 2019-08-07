@@ -50,6 +50,10 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 9374}
     - Class: 114
+      Script: {instanceID: 9376}
+    - Class: 114
+      Script: {instanceID: 9388}
+    - Class: 114
       Script: {instanceID: 9396}
     - Class: 114
       Script: {instanceID: 9408}
@@ -122,6 +126,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 9364}
     - Class: 114
       Script: {instanceID: 9374}
+    - Class: 114
+      Script: {instanceID: 9376}
+    - Class: 114
+      Script: {instanceID: 9388}
     - Class: 114
       Script: {instanceID: 9396}
     - Class: 114
