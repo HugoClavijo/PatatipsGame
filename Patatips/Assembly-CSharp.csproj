@@ -59,11 +59,15 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\boardMenu.cs" />
     <Compile Include="Assets\Scripts\Close.cs" />
+    <Compile Include="Assets\Scripts\CountdownTimer.cs" />
     <Compile Include="Assets\Scripts\Dice.cs" />
     <Compile Include="Assets\Scripts\FollowThePath.cs" />
     <Compile Include="Assets\Scripts\GameControl.cs" />
     <Compile Include="Assets\Scripts\info.cs" />
     <Compile Include="Assets\Scripts\menuCanvas.cs" />
+    <Compile Include="Assets\Scripts\MonsterControl.cs" />
+    <Compile Include="Assets\Scripts\MonstersSpawnerControl.cs" />
+    <Compile Include="Assets\Scripts\MoveCat.cs" />
     <Compile Include="Assets\Scripts\play.cs" />
     <Compile Include="Assets\Scripts\popupCanvas.cs" />
     <Compile Include="Assets\Scripts\TiempodeVida.cs" />
