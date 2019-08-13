@@ -8,24 +8,43 @@ public class MonsterControl : MonoBehaviour
     Rigidbody2D rb;
     GameObject target;
     GameObject timer;
+    GameObject whoWinsTxt;
+    GameObject whoLoseTxt;
+    GameObject whoWinsBtn;
+
+    public static bool loser;
+    public static bool winner;
 
     float moveSpeed;
     Vector3 directionToTarget;
-    //public GameObject explosion;
+    public GameObject explosion;
 
     // Start is called before the first frame update
     void Start()
     {
         target = GameObject.Find("Cat");
         timer = GameObject.Find("CountdownText");
+        //whoWinsTxt = GameObject.Find("txt");
+        whoWinsBtn = GameObject.Find("Replay");
+        whoLoseTxt = GameObject.Find("LoseTxt");
+     
         rb = GetComponent<Rigidbody2D>();
         moveSpeed = Random.Range(1f, 3f);
+        loser = false;
+        winner = false;
+
     }
 
     // Update is called once per frame
     void Update()
     {
         MoveMonster();
+
+        if (target == null)
+        {
+            Destroy(GameObject.FindWithTag("Enemy"));
+
+        }
     }
 
 
@@ -37,11 +56,11 @@ public class MonsterControl : MonoBehaviour
             case "Player":
                 MonstersSpawnerControl.spawnAllowed = false;
                 //Instantiate(explosion, col.gameObject.transform.position, Quaternion.identity);
-                //Instantiate(target, col.gameObject.transform.position, Quaternion.identity);
                 Destroy(col.gameObject);
                 //col.gameObject.SetActive(false);
                 target = null;
-                timer.SetActive(false);
+                loser = true;
+                timer.SetActive(false);         
                 break;
 
         }
@@ -64,8 +83,11 @@ public class MonsterControl : MonoBehaviour
 
     private void OnMouseDown()
     {
-        Destroy(gameObject);
+        Instantiate(explosion, transform.position, Quaternion.identity);
+        Destroy(gameObject);       
+        
     }
 
+    
 
 }

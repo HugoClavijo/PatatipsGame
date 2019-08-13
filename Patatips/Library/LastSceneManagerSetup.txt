@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/MiniGameCat.unity
+- path: Assets/Scenes/SelectPlayer.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

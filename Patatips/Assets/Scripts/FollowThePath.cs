@@ -15,8 +15,11 @@ public class FollowThePath : MonoBehaviour {
     
 	// Use this for initialization
 	private void Start () {
-        transform.position = waypoints[waypointIndex].transform.position;
-	}
+
+        StartGame();
+
+
+    }
 	
 	// Update is called once per frame
 	private void Update () {
@@ -36,7 +39,17 @@ public class FollowThePath : MonoBehaviour {
             {
                 Instantiate(moverficha);
                 waypointIndex += 1;
+                //GameControl.lastWaypoint = waypointIndex;
             }
         }
     }
+
+
+    public void StartGame()
+    {
+        transform.position = waypoints[waypointIndex].transform.position;
+    }
+
+
+
 }

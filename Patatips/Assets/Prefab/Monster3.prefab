@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 2684244454047222737}
   m_Layer: 0
   m_Name: Monster3
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -131,3 +131,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34ea7200e5a34a24bb7ab32b002727d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  explosion: {fileID: 9214163241498672932, guid: 29358bc20bdf5224db36b6de29258f15,
+    type: 3}
