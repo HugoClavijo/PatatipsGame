@@ -27,7 +27,7 @@ public class MonsterControl : MonoBehaviour
     void Start()
     {
         target = GameObject.Find("Cat");
-        timer = GameObject.Find("CountdownText");
+        timer = GameObject.Find("Canvas");
         //whoWinsTxt = GameObject.Find("txt");
         whoWinsBtn = GameObject.Find("Replay");
         whoLoseTxt = GameObject.Find("LoseTxt");
@@ -65,7 +65,8 @@ public class MonsterControl : MonoBehaviour
                 //col.gameObject.SetActive(false);
                 target = null;
                 loser = true;
-                timer.SetActive(false);         
+                //timer.SetActive(false);  
+                Destroy(timer);
                 break;
 
         }
