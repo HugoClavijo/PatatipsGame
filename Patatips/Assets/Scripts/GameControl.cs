@@ -84,7 +84,7 @@ public class GameControl : MonoBehaviour {
             player1.GetComponent<FollowThePath>().waypointIndex = lastWaypointP1;
             player1.GetComponent<FollowThePath>().StartGame();
             player1StartWaypoint = player1.GetComponent<FollowThePath>().waypointIndex;
-            Debug.Log(player1.GetComponent<FollowThePath>().waypointIndex);
+           // Debug.Log(player1.GetComponent<FollowThePath>().waypointIndex);
             //player1.GetComponent<FollowThePath>().moveAllowed = false;
             //Dice.ChangeTurn();
             //player1MoveText.gameObject.SetActive(false);
@@ -93,7 +93,7 @@ public class GameControl : MonoBehaviour {
             player2.GetComponent<FollowThePath>().waypointIndex = lastWaypointP2;
             player2.GetComponent<FollowThePath>().StartGame();
             player2StartWaypoint = player2.GetComponent<FollowThePath>().waypointIndex;
-            Debug.Log(player2.GetComponent<FollowThePath>().waypointIndex);
+           // Debug.Log(player2.GetComponent<FollowThePath>().waypointIndex);
             //gameReplay = false;
             // miniGame = false;
         }

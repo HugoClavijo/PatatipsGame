@@ -19,13 +19,13 @@ public class PopupInst : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        popup0 = GameObject.Find("PanelInst");
-        popup1 = GameObject.Find("PanelInst1");
+       // popup0 = GameObject.Find("PanelInst");
+       // popup1 = GameObject.Find("PanelInst1");
         //popup0.SetActive(true);
         //popup1.SetActive(false);
 
-        popup2 = GameObject.Find("PanelInst2");
-        popup3 = GameObject.Find("PanelInst3");
+       // popup2 = GameObject.Find("PanelInst2");
+       // popup3 = GameObject.Find("PanelInst3");
         // popup4 = GameObject.Find("PanelInst4");
     }
 
