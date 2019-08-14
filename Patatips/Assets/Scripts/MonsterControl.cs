@@ -12,6 +12,10 @@ public class MonsterControl : MonoBehaviour
     GameObject whoLoseTxt;
     GameObject whoWinsBtn;
 
+    public GameObject sonidoSplash;
+    public GameObject sonidoPlop;
+    
+
     public static bool loser;
     public static bool winner;
 
@@ -56,6 +60,7 @@ public class MonsterControl : MonoBehaviour
             case "Player":
                 MonstersSpawnerControl.spawnAllowed = false;
                 //Instantiate(explosion, col.gameObject.transform.position, Quaternion.identity);
+                Instantiate(sonidoPlop);
                 Destroy(col.gameObject);
                 //col.gameObject.SetActive(false);
                 target = null;
@@ -83,6 +88,7 @@ public class MonsterControl : MonoBehaviour
 
     private void OnMouseDown()
     {
+        Instantiate(sonidoSplash);
         Instantiate(explosion, transform.position, Quaternion.identity);
         Destroy(gameObject);       
         

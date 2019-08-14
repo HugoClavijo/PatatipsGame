@@ -5,7 +5,7 @@ public class Dice : MonoBehaviour {
 
     private Sprite[] diceSides;
     private SpriteRenderer rend;
-    public static int whosTurn = 1;
+    private int whosTurn = 1;
     private bool coroutineAllowed = true;
     public GameObject sonidoDados;
 
@@ -23,7 +23,7 @@ public class Dice : MonoBehaviour {
             StartCoroutine("RollTheDice");
     }
 
-    public IEnumerator RollTheDice()
+    private IEnumerator RollTheDice()
     {
         Instantiate(sonidoDados);
         coroutineAllowed = false;
@@ -38,12 +38,13 @@ public class Dice : MonoBehaviour {
         GameControl.diceSideThrown = randomDiceSide + 1;
         if (whosTurn == 1)
         {
-            GameControl.MovePlayer(1);
-            GameControl.lastWaypointP1 += randomDiceSide + 1;
+            GameControl.MovePlayer(1);       
+                GameControl.lastWaypointP1 += randomDiceSide + 1;
+         
         } else if (whosTurn == -1)
         {
             GameControl.MovePlayer(2);
-            GameControl.lastWaypointP2 += randomDiceSide + 1;         
+                GameControl.lastWaypointP2 += randomDiceSide + 1;        
         }
         whosTurn *= -1;
         coroutineAllowed = true;

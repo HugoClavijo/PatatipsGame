@@ -5,10 +5,12 @@ using UnityEngine.SceneManagement;
 public class GameControl : MonoBehaviour {
 
     public static GameObject whoWinsTextShadow, player1MoveText, player2MoveText;
-    public GameObject popupbath, popupfood, popupbrush, popupvet, popupInst;
-
+    public GameObject popupbath, popupfood, popupbrush, popupvet, popupInst, oneUP;
+    public GameObject popupInst1, popupInst2, popupInst3;
     public static GameObject player1, player2;
+    public static Animator anim;
 
+    //public GameObject sonidoUp;
 
     public static int diceSideThrown = 0;
     public static int player1StartWaypoint = 0;
@@ -18,6 +20,8 @@ public class GameControl : MonoBehaviour {
 
     public static bool gameOver = false;
     public static bool gameReplay = false;
+    //public static bool gameReplay2 = false;
+    // public static bool miniGame = true;
     public static bool isPaused = false;
     public static bool isPaused2 = false;
     public static bool isPaused3 = false;
@@ -31,11 +35,15 @@ public class GameControl : MonoBehaviour {
         player2MoveText = GameObject.Find("Player2MoveText");
 
         popupInst = GameObject.Find("PanelInst");
+        popupInst1 = GameObject.Find("PanelInst1");
+        popupInst2 = GameObject.Find("PanelInst2");
+        popupInst3 = GameObject.Find("PanelInst3");
+
         popupbath = GameObject.Find("PanelBath");
        popupfood = GameObject.Find("PanelFood");
        popupbrush = GameObject.Find("PanelBrush");
        popupvet = GameObject.Find("PanelVet");
-
+        oneUP = GameObject.Find("oneUp");
 
         player1 = GameObject.Find("Player1");
         player2 = GameObject.Find("Player2");
@@ -44,28 +52,31 @@ public class GameControl : MonoBehaviour {
             player1StartWaypoint = 0;
             player2StartWaypoint = 0;
             gameOver = false;
+        //miniGame = true;
+        anim = GetComponent<Animator>();
 
-     
 
         player1.GetComponent<FollowThePath>().moveAllowed = false;
         player2.GetComponent<FollowThePath>().moveAllowed = false;
-
-
-              
-
+          
         whoWinsTextShadow.gameObject.SetActive(false);
         player1MoveText.gameObject.SetActive(true);
         player2MoveText.gameObject.SetActive(false);
 
-       popupbath.gameObject.SetActive(false);
+        popupInst1.gameObject.SetActive(false);
+        popupInst2.gameObject.SetActive(false);
+        popupInst3.gameObject.SetActive(false);
+        popupbath.gameObject.SetActive(false);
        popupfood.gameObject.SetActive(false);
       popupbrush.gameObject.SetActive(false);
       popupvet.gameObject.SetActive(false);
+      oneUP.gameObject.SetActive(false);
 
         isPaused = false;
         isPaused2 = false;
         isPaused3 = false;
         isPaused4 = false;
+
 
         if (gameReplay == true)
         {
@@ -76,16 +87,17 @@ public class GameControl : MonoBehaviour {
             Debug.Log(player1.GetComponent<FollowThePath>().waypointIndex);
             //player1.GetComponent<FollowThePath>().moveAllowed = false;
             //Dice.ChangeTurn();
-            player1MoveText.gameObject.SetActive(false);
-            player2MoveText.gameObject.SetActive(true);
+            //player1MoveText.gameObject.SetActive(false);
+            //player2MoveText.gameObject.SetActive(true);
             //MovePlayer(2);
             player2.GetComponent<FollowThePath>().waypointIndex = lastWaypointP2;
             player2.GetComponent<FollowThePath>().StartGame();
             player2StartWaypoint = player2.GetComponent<FollowThePath>().waypointIndex;
             Debug.Log(player2.GetComponent<FollowThePath>().waypointIndex);
+            //gameReplay = false;
+            // miniGame = false;
         }
 
-        //gameReplay = false;
 
     }
 
@@ -122,10 +134,12 @@ public class GameControl : MonoBehaviour {
 
             if (scene.name == "BoardScene")
             {
+               // ResetGame();
                 SceneManager.LoadScene("WinDogScene", LoadSceneMode.Single);
             }
             else
             {
+                //ResetGame();
                 SceneManager.LoadScene("WinCatScene", LoadSceneMode.Single);
             }
                 
@@ -134,6 +148,7 @@ public class GameControl : MonoBehaviour {
  
         if (player1.GetComponent<FollowThePath>().waypointIndex == 5)
         {
+           
 
             if (gameReplay == false)
             {
@@ -146,6 +161,23 @@ public class GameControl : MonoBehaviour {
                     isPaused = true;
                 }
 
+               
+
+            }
+
+                //gameReplay = true;
+
+        }
+
+
+
+        if (player1.GetComponent<FollowThePath>().waypointIndex == 6)
+        {
+
+
+            if (gameReplay == false)
+            {
+
                 Scene scene2 = SceneManager.GetActiveScene();
 
                 if (scene2.name == "BoardScene2")
@@ -156,12 +188,41 @@ public class GameControl : MonoBehaviour {
                     MiniGameCat();
                 }
 
+                if (scene2.name == "BoardScene")
+                {
+                    MonsterControl.loser = false;
+                    MonsterControl.winner = false;
+                    Time.timeScale = 1;
+                    MiniGameDog();
+                }
 
             }
 
-               
+            //gameReplay = true;
 
         }
+
+
+
+
+
+
+        if (gameReplay == true)
+        {
+            oneUP.gameObject.SetActive(true);
+            //Instantiate(sonidoUp);
+
+            if (null != anim)
+            {
+                // play Bounce but start at a quarter of the way though
+                anim.Play("oneUp", 0, 0.25f);
+            }
+        }
+
+
+      
+
+
 
         if (player1.GetComponent<FollowThePath>().waypointIndex == 10)
         {
@@ -212,10 +273,12 @@ public class GameControl : MonoBehaviour {
             Scene scene2 = SceneManager.GetActiveScene();
 
             if (scene2.name == "BoardScene") {
+               // ResetGame();
                 SceneManager.LoadScene("LoseDogScene", LoadSceneMode.Single);
             }
             else
             {
+                //ResetGame();
                 SceneManager.LoadScene("LoseCatScene", LoadSceneMode.Single);
             }
 
@@ -244,16 +307,25 @@ public class GameControl : MonoBehaviour {
     public void CloseGame()
     {
         //Dice.whosTurn = 1;
-        gameReplay = false;
-        lastWaypointP1 = 0;
-        lastWaypointP2 = 0;
-
+        ResetGame();
     SceneManager.LoadScene("MainMenu", LoadSceneMode.Single);
     }
 
     public void MiniGameCat()
     {
         SceneManager.LoadScene("MiniGameCat");
+    }
+
+    public void MiniGameDog()
+    {
+        SceneManager.LoadScene("MiniGameDog");
+    }
+
+    public void ResetGame()
+    {
+        gameReplay = false;
+        lastWaypointP1 = 0;
+        lastWaypointP2 = 0;
     }
 
 }

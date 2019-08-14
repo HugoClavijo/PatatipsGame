@@ -131,5 +131,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34ea7200e5a34a24bb7ab32b002727d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sonidoSplash: {fileID: 4754565041720869786, guid: f96c4648edd29da4591161d07741bb7a,
+    type: 3}
+  sonidoPlop: {fileID: 381922904439744215, guid: b02797e9b459aa04cb6bc64b611bcddb,
+    type: 3}
   explosion: {fileID: 9214163241498672932, guid: 29358bc20bdf5224db36b6de29258f15,
     type: 3}

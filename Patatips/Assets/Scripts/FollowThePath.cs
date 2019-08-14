@@ -16,8 +16,8 @@ public class FollowThePath : MonoBehaviour {
 	// Use this for initialization
 	private void Start () {
 
-        StartGame();
-
+       // StartGame();
+        transform.position = waypoints[waypointIndex].transform.position;
 
     }
 	
@@ -39,16 +39,20 @@ public class FollowThePath : MonoBehaviour {
             {
                 Instantiate(moverficha);
                 waypointIndex += 1;
-                //GameControl.lastWaypoint = waypointIndex;
+                
             }
         }
     }
+
+
+
 
 
     public void StartGame()
     {
         transform.position = waypoints[waypointIndex].transform.position;
     }
+
 
 
 
