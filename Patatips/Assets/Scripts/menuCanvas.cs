@@ -24,7 +24,7 @@ public class menuCanvas : MonoBehaviour
     public void OpenSceneWithWait(string sceneName)
     {
         nameScene = sceneName;
-        Invoke("OpenScene", 0.3f);
+        Invoke("OpenScene", 0.2f);
 
     }
 

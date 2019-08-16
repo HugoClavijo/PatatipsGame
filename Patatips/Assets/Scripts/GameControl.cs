@@ -26,6 +26,9 @@ public class GameControl : MonoBehaviour {
     public static bool isPaused2 = false;
     public static bool isPaused3 = false;
     public static bool isPaused4 = false;
+    Scene scene;
+    Scene scene2;
+
 
     // Use this for initialization
     void Start () {
@@ -48,8 +51,10 @@ public class GameControl : MonoBehaviour {
         player1 = GameObject.Find("Player1");
         player2 = GameObject.Find("Player2");
 
-      
-            player1StartWaypoint = 0;
+        scene = SceneManager.GetActiveScene();
+        scene2 = SceneManager.GetActiveScene();
+
+        player1StartWaypoint = 0;
             player2StartWaypoint = 0;
             gameOver = false;
         //miniGame = true;
@@ -130,7 +135,7 @@ public class GameControl : MonoBehaviour {
             //whoWinsTextShadow.GetComponent<Text>().text = "Player 1 Wins";
             gameOver = true;
 
-            Scene scene = SceneManager.GetActiveScene();
+            
 
             if (scene.name == "BoardScene")
             {
@@ -269,9 +274,7 @@ public class GameControl : MonoBehaviour {
             gameOver = true;
 
             //string scene = SceneManager.GetActiveScene().name;
-
-            Scene scene2 = SceneManager.GetActiveScene();
-
+      
             if (scene2.name == "BoardScene") {
                // ResetGame();
                 SceneManager.LoadScene("LoseDogScene", LoadSceneMode.Single);
