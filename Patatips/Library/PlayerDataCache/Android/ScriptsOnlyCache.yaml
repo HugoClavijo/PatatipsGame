@@ -1510,4 +1510,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/LoseCatScene.unity
   - Assets/Scenes/MiniGameDog.unity
   - Assets/Scenes/MiniGameCat.unity
-  playerPath: C:/Users/hugoc/Documents/Integradora/APK/Google Play/Patatips.aab
+  playerPath: C:/Users/hugoc/Documents/Integradora/APK/Patatips.apk
