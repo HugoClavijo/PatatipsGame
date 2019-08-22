@@ -24,6 +24,8 @@ ScriptsOnlyBuild:
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
     - UnityEditor.Graphs.AnimatorControllerTool
+    UnityEditor.TestRunner.dll:
+    - UnityEditor.TestTools.TestRunner.TestListCacheData
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
     - UnityEngine.EventSystems.StandaloneInputModule
@@ -1510,4 +1512,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/LoseCatScene.unity
   - Assets/Scenes/MiniGameDog.unity
   - Assets/Scenes/MiniGameCat.unity
-  playerPath: C:/Users/hugoc/Documents/Integradora/APK/Patatips.apk
+  playerPath: C:/Users/hugoc/Documents/Integradora/APK/Google Play/Patatips.aab

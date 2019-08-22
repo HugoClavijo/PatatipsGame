@@ -1,0 +1,35 @@
+--output="Temp/StagingArea/libs/armeabi-v7a/libunity.so"
+"Temp/StagingArea/strip/armeabi-v7a/UnityICallRegistration.o"
+"Temp/StagingArea/strip/armeabi-v7a/UnityClassRegistration.o"
+"C:/Program Files/Unity/Hub/Editor/2019.1.10f1/Editor/Data/PlaybackEngines/AndroidPlayer/Variations/il2cpp/Release/StaticLibs/armeabi-v7a/libunityruntime.a"
+"C:/Program Files/Unity/Hub/Editor/2019.1.10f1/Editor/Data/PlaybackEngines/AndroidPlayer/Variations/il2cpp/Common/StaticLibs/armeabi-v7a/libunityexternal.a"
+--target=armv7-none-linux-androideabi
+--gcc-toolchain="C:/Users/hugoc/Documents/android-ndk-r16b/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64"
+--sysroot="C:/Users/hugoc/Documents/android-ndk-r16b/platforms/android-16/arch-arm"
+-shared
+-Wl,-soname,libunity.so
+-Wl,--no-undefined
+-Wl,--build-id
+-Wl,-z,noexecstack
+-Wl,--gc-sections
+-fuse-ld=gold.exe
+-Wl,--wrap,abort
+"C:/Program Files/Unity/Hub/Editor/2019.1.10f1/Editor/Data/PlaybackEngines/AndroidPlayer/Variations/il2cpp/Release/Libs/armeabi-v7a/libmain.so"
+-Wl,--exclude-libs,libunityexternal.a
+-L"C:/Users/hugoc/Documents/android-ndk-r16b/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a"
+-Wl,-u,JNI_OnLoad
+-Wl,-u,JNI_OnUnload
+-Wl,-u,UnitySendMessage
+-Wl,--version-script="C:/Program Files/Unity/Hub/Editor/2019.1.10f1/Editor/Data/PlaybackEngines/AndroidPlayer/Variations/il2cpp/Common/StaticLibs/armeabi-v7a/../libunity.map"
+-lc
+-lm
+-lgnustl_static
+-landroid
+-ldl
+-llog
+-lGLESv2
+-lstdc++
+-lz
+-lEGL
+-latomic
+
