@@ -10,11 +10,13 @@ public class popupCanvas : MonoBehaviour
      GameObject popup2;
      GameObject popup3;
      GameObject popup4;
+    public GameObject dice;
     //private static GameObject popup;
 
     // Start is called before the first frame update
     void Start()
     {
+        dice = GameObject.Find("Dice");
         popup0 = GameObject.Find("PanelInst");
         popup1 = GameObject.Find("PanelBath");
         popup2 = GameObject.Find("PanelFood");
@@ -27,6 +29,7 @@ public class popupCanvas : MonoBehaviour
         //popup = GameObject.Find(names);
         //popup.SetActive(false);
         //popup0.SetActive(false);
+        dice.gameObject.SetActive(true);
         popup1.SetActive(false);
         popup2.SetActive(false);
         popup3.SetActive(false);

@@ -690,7 +690,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: BoardScene2
+          m_StringArgument: InstCatScene
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 1495184512}
@@ -1269,7 +1269,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: BoardScene
+          m_StringArgument: InstDogScene
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 1835019337}

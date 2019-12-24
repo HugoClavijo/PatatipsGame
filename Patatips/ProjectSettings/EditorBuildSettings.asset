@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Splash.unity
+    guid: 5edb50d9477b02f46bc460c91ce71076
+  - enabled: 1
     path: Assets/Scenes/MainMenu.unity
     guid: 48d3eaa6e5c4b4c48bccd429071ffb44
   - enabled: 1
@@ -33,9 +36,21 @@ EditorBuildSettings:
     path: Assets/Scenes/LoseCatScene.unity
     guid: c793333dc045a25439429131d1b08002
   - enabled: 1
+    path: Assets/Scenes/InstDogScene.unity
+    guid: a7168bb2d1765df408cfc05dafc86b51
+  - enabled: 1
+    path: Assets/Scenes/InstCatScene.unity
+    guid: cb64bd68d7b5e074b85d5612a8e1a1cb
+  - enabled: 1
     path: Assets/Scenes/MiniGameDog.unity
     guid: 773c6f4938b55a448abb2580e3123d50
   - enabled: 1
     path: Assets/Scenes/MiniGameCat.unity
     guid: 037537aca1f5a8249a4df19ce123c86a
+  - enabled: 1
+    path: Assets/Scenes/MiniGameCat2.unity
+    guid: 86668e7fcf3527549b241929e64f85fb
+  - enabled: 1
+    path: Assets/Scenes/MiniGameDog2.unity
+    guid: 1f8e77f138253e143b33ed8b03aeb4be
   m_configObjects: {}
